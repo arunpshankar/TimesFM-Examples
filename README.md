@@ -97,8 +97,7 @@ A collection of experiments and demonstrations showcasing **TimesFM**'s time ser
 
 4. **Set environment variables** (to avoid writing `.pyc` files and ensure `src` is on `PYTHONPATH`):
    ```bash
-   export PYTHONDONTWRITEBYTECODE=1
-   export PYTHONPATH=$PYTHONPATH:.
+   export PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=$PYTHONPATH:.
    ```
 
 5. **GCP Setup**:

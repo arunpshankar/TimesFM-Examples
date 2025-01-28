@@ -1,26 +1,9 @@
 from src.invoke.helper import create_vertex_ai_predictor
 from src.invoke.helper import make_inference
-from src.invoke.helper import load_endpoints
 from src.invoke.helper import Visualizer
 from src.config.logging import logger
 import os
 import pandas as pd
-
-
-def get_endpoint_name(yaml_file_path: str) -> str:
-    """
-    Loads endpoints from the given YAML configuration and returns the first one.
-    
-    :param yaml_file_path: Path to the YAML file containing endpoints.
-    :return: The name of the first endpoint found.
-    :raises ValueError: If no endpoints are found.
-    """
-    endpoints = load_endpoints(yaml_file_path)
-    if not endpoints:
-        logger.error("No endpoints found in the configuration file.")
-        raise ValueError("Endpoints configuration is empty.")
-    logger.info("Using endpoint: %s", endpoints[0])
-    return endpoints[0]
 
 
 def load_temperature_data(file_path: str) -> pd.DataFrame:
@@ -166,9 +149,6 @@ def test():
 
     save_dir = "./data/visuals"
     save_visualizations(viz, save_dir, file_prefix="temperature_forecasts_anamoly")
-
-
-
 
 
 if __name__ == "__main__":

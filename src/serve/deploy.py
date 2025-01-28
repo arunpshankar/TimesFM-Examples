@@ -7,6 +7,7 @@ from datetime import datetime
 import yaml
 import os
 
+
 def create_endpoint() -> Endpoint:
     """
     Creates an endpoint in Google AI Platform with a specified model name.

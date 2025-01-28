@@ -36,7 +36,7 @@ A collection of examples showcasing **TimesFM**'s time series forecasting capabi
 
 ## Overview
 
-**TimesFM Playground** provides a hands-on environment to explore and experiment with time series forecasting using TimesFM. You can deploy a pre-trained model to Google Vertex AI for real-time inference or fine-tune a model for specific datasets such as stock prices, temperatures, or other custom time series.
+This repo provides a hands-on environment to explore and experiment with time series forecasting using TimesFM 1.0 and 2.0. You can deploy a pre-trained model to Google Vertex AI for real-time inference or fine-tune a model for specific datasets such as stock prices, temperatures, or other custom time series.
 
 #
 
@@ -81,7 +81,7 @@ A collection of examples showcasing **TimesFM**'s time series forecasting capabi
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/arunpshankar/TimesFM-Playground.git
+   git clone https://github.com/arunpshankar/TimesFM-Examples.git
    cd TimesFM-Playground
    ```
 
@@ -180,7 +180,7 @@ Inside `src/invoke`, you will find multiple Python scripts demonstrating how to:
 
 ## Fine-Tuning
 
-A single Jupyter notebook (`finetune_timesfm.ipynb`) encapsulates all the steps needed to:
+A single Jupyter notebook (`02-finetune.ipynb`) encapsulates all the steps needed to:
 
 1. **Prepare a dataset** (e.g., stock prices from `yfinance`).  
 2. **Fine-tune TimesFM 2.0** on the dataset.  

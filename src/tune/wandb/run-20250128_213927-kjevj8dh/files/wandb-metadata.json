@@ -1,0 +1,58 @@
+{
+  "os": "Linux-5.10.0-33-cloud-amd64-x86_64-with-glibc2.31",
+  "python": "CPython 3.10.15",
+  "startedAt": "2025-01-28T21:39:27.964818Z",
+  "program": "./TimesFM-Examples/src/tune/02-finetune.ipynb",
+  "git": {
+    "remote": "https://github.com/arunpshankar/TimesFM-Examples.git",
+    "commit": "3fdce9f41fbd12601cccab75e5020930bd6ffb44"
+  },
+  "email": "shankar.arunp@gmail.com",
+  "root": "/home/jupyter/TimesFM-Examples/src/tune",
+  "host": "vertex-ai-model-garden-playground",
+  "executable": "/opt/conda/bin/python",
+  "cpu_count": 4,
+  "cpu_count_logical": 8,
+  "gpu": "Tesla T4",
+  "gpu_count": 4,
+  "disk": {
+    "/": {
+      "total": "158271492096",
+      "used": "51943960576"
+    }
+  },
+  "memory": {
+    "total": "54759997440"
+  },
+  "cpu": {
+    "count": 4,
+    "countLogical": 8
+  },
+  "gpu_nvidia": [
+    {
+      "name": "Tesla T4",
+      "memoryTotal": "16106127360",
+      "cudaCores": 2560,
+      "architecture": "Turing"
+    },
+    {
+      "name": "Tesla T4",
+      "memoryTotal": "16106127360",
+      "cudaCores": 2560,
+      "architecture": "Turing"
+    },
+    {
+      "name": "Tesla T4",
+      "memoryTotal": "16106127360",
+      "cudaCores": 2560,
+      "architecture": "Turing"
+    },
+    {
+      "name": "Tesla T4",
+      "memoryTotal": "16106127360",
+      "cudaCores": 2560,
+      "architecture": "Turing"
+    }
+  ],
+  "cudaVersion": "12.4"
+}

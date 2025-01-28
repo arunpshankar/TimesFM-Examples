@@ -85,8 +85,8 @@ A collection of experiments and demonstrations showcasing **TimesFM**'s time ser
 
 2. **Create and activate a virtual environment**:
    ```bash
-   python -m venv .venv
-   source .venv/bin/activate
+   python -m venv .timesfm
+   source .timesfm/bin/activate
    ```
 
 3. **Upgrade pip and install required packages**:

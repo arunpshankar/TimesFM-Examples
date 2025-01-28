@@ -68,6 +68,7 @@ def make_inference(predictor: Predictor, instances: List[Dict[str, Any]]) -> Any
         logger.error("Failed to make inference: %s", e)
         raise
 
+
 class Visualizer:
     def __init__(self, nrows: int, ncols: int):
         """

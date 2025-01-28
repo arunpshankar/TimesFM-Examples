@@ -1,4 +1,5 @@
 from src.invoke.helper import create_vertex_ai_predictor
+from src.utils.inference import get_endpoint_name
 from src.invoke.helper import make_inference
 from src.invoke.helper import Visualizer
 from src.config.logging import logger

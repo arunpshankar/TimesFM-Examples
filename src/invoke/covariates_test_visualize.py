@@ -1,8 +1,9 @@
-import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import pandas as pd
 import os
 import json
+
 
 def load_forecast_json(file_path):
     """
@@ -29,6 +30,7 @@ def load_forecast_json(file_path):
     except Exception as e:
         print(f"Error loading JSON file {file_path}: {e}")
         return pd.DataFrame()
+
 
 def visualize_forecasts_from_json(file_with_cov, file_without_cov, output_dir='./data/visuals'):
     """
@@ -80,6 +82,7 @@ def visualize_forecasts_from_json(file_with_cov, file_without_cov, output_dir='.
         plt.yticks(fontsize=12)
         plt.tight_layout()
         plt.savefig(os.path.join(output_dir, 'forecast_without_covariates.png'))
+
 
 # Example usage
 # Replace the file paths with the actual paths to your JSON files

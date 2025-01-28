@@ -1,11 +1,12 @@
 from src.invoke.helper import create_vertex_ai_predictor
-from src.invoke.helper import make_inference, load_endpoints
+from src.invoke.helper import make_inference
+from src.invoke.helper import load_endpoints
 from src.config.logging import logger
-import os
-import pandas as pd
-import numpy as np
-import json
 from collections import defaultdict
+import pandas as pd
+import json
+import os
+
 
 # https://github.com/google-research/timesfm/blob/master/notebooks/covariates.ipynb
 
@@ -24,6 +25,7 @@ def get_endpoint_name(yaml_file_path: str) -> str:
     logger.info("Using endpoint: %s", endpoints[0])
     return endpoints[0]
 
+
 def load_electricity_data(file_path: str) -> pd.DataFrame:
     """
     Loads electricity price forecasting data from a CSV file.
@@ -39,12 +41,8 @@ def load_electricity_data(file_path: str) -> pd.DataFrame:
     logger.info("Loading electricity data from: %s", file_path)
     return pd.read_csv(file_path)
 
-def get_batched_data_fn(
-    data: pd.DataFrame,
-    batch_size: int = 128,
-    context_len: int = 120,
-    horizon_len: int = 24,
-):
+
+def get_batched_data_fn(data: pd.DataFrame, batch_size: int = 128, context_len: int = 120, horizon_len: int = 24):
     """
     Prepares batched data for forecasting.
 
@@ -83,6 +81,7 @@ def get_batched_data_fn(
             yield {k: v[(i * batch_size):((i + 1) * batch_size)] for k, v in examples.items()}
 
     return data_fn
+
 
 def perform_forecast_with_and_without_covariates(predictor, data_fn, output_dir, context_len, horizon_len):
     """
@@ -140,6 +139,7 @@ def perform_forecast_with_and_without_covariates(predictor, data_fn, output_dir,
         with open(cov_forecast_file, "w") as cov_file:
             json.dump(cov_forecast, cov_file, indent=4)
 
+
 def test():
     """
     Main entry point for the script. Loads data, prepares instances, performs forecasting,
@@ -165,6 +165,7 @@ def test():
     perform_forecast_with_and_without_covariates(
         predictor, data_fn, output_dir, context_len, horizon_len
     )
+
 
 if __name__ == "__main__":
     test()

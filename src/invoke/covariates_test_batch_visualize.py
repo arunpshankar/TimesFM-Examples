@@ -1,9 +1,9 @@
-import pandas as pd
+from src.config.logging import logger 
+from collections import defaultdict
 import matplotlib.pyplot as plt
+import pandas as pd
 import seaborn as sns
 import os
-from collections import defaultdict
-from src.config.logging import logger 
 
 
 def load_electricity_data(file_path: str) -> pd.DataFrame:
@@ -20,6 +20,7 @@ def load_electricity_data(file_path: str) -> pd.DataFrame:
 
     logger.info("Loading electricity data from: %s", file_path)
     return pd.read_csv(file_path)
+
 
 def visualize_first_batch(df, batch_size=128, context_len=5, horizon_len=2, output_dir='./data/visuals'):
     """
@@ -81,6 +82,7 @@ def visualize_first_batch(df, batch_size=128, context_len=5, horizon_len=2, outp
     plt.savefig(output_file)
     plt.show()
     print(f"Visualization saved to {output_file}")
+
 
 # Example usage
 # Assuming 'df' is already loaded with the required data

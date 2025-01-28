@@ -1,16 +1,18 @@
-# TimesFM Playground
+# TimesFM Examples
 
-A collection of experiments and demonstrations showcasing **TimesFM**'s time series forecasting capabilities using **TimesFM 2.0**. This repository includes Python modules and Jupyter notebooks for:
+A collection of examples showcasing **TimesFM**'s time series forecasting capabilities using **TimesFM 2.0**. This repository includes Python modules and Jupyter notebooks for:
 
 1. **Serving**  
 2. **Inference**  
 3. **Fine-Tuning**  
 
+[time](data/visuals/time.jpeg)
+
 #
 
 ## Table of Contents
 
-- [TimesFM Playground](#timesfm-playground)
+- [TimesFM Examples](#timesfm-examples)
 - [](#)
   - [Table of Contents](#table-of-contents)
 - [](#-1)

@@ -6,7 +6,7 @@ A collection of examples showcasing **TimesFM**'s time series forecasting capabi
 2. **Inference**  
 3. **Fine-Tuning**  
 
-[time](data/visuals/time.jpeg)
+![time](data/visuals/time.jpeg)
 
 #
 

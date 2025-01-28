@@ -1,0 +1,5 @@
+bucket_uri: "gs://"
+region: "us-central1"
+project_id: "arun-genai-bb"
+credentials_json: "./credentials/key.json"
+bucket_name: "timesfm_playground"

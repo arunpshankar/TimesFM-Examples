@@ -1,0 +1,3 @@
+endpoints:
+#- projects/390991481152/locations/us-central1/endpoints/582751058325929984  # timesfm 1.0
+- projects/390991481152/locations/us-central1/endpoints/4475127773769236480 # timesfm 2.0

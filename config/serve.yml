@@ -1,0 +1,22 @@
+#model_location: "gs://vertex-model-garden-public-us/timesfm"
+model_location: "gs://timesfm_playground/timesfm_2_0"
+#model_name: "timesfm-1.0-200m"
+model_name: "timesfm-2.0-500m-pytorch"
+serve_docker_uri: "us-docker.pkg.dev/vertex-ai/vertex-vision-model-garden-dockers/jax-timesfm-serve:20240828_1036_RC00"
+service_account: "as-service@arun-genai-bb.iam.gserviceaccount.com"
+#model_display_name: "timesfm-v1"
+model_display_name: "timesfm-v2"
+machine_type: "g2-standard-4"
+accelerator_type: "NVIDIA_L4"
+#accelerator_count: 1
+accelerator_count: 1
+deploy_source: "notebook"
+use_dedicated_endpoint: false
+timesfm_backend: "gpu"
+
+# Maximum Forecast Horizon Configuration
+# TimesFM will be compiled to predict this number of future time points.
+# The endpoint will always predict this number, rounded up to the nearest
+# multiplier of the model output patch length.
+horizon: 256
+deploy_request_timeout: 1800

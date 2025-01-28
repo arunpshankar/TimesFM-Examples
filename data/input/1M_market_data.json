@@ -1,0 +1,121 @@
+[
+    {
+        "price": 139.67,
+        "currency": "USD",
+        "date": "Dec 23 2024, 04:00 PM UTC-05:00",
+        "volume": 176053506
+    },
+    {
+        "price": 140.22,
+        "currency": "USD",
+        "date": "Dec 24 2024, 01:05 PM UTC-05:00",
+        "volume": 105156989
+    },
+    {
+        "price": 139.93,
+        "currency": "USD",
+        "date": "Dec 26 2024, 04:00 PM UTC-05:00",
+        "volume": 116519090
+    },
+    {
+        "price": 137.01,
+        "currency": "USD",
+        "date": "Dec 27 2024, 04:00 PM UTC-05:00",
+        "volume": 170582603
+    },
+    {
+        "price": 137.49,
+        "currency": "USD",
+        "date": "Dec 30 2024, 04:00 PM UTC-05:00",
+        "volume": 167734700
+    },
+    {
+        "price": 134.29,
+        "currency": "USD",
+        "date": "Dec 31 2024, 04:00 PM UTC-05:00",
+        "volume": 155659211
+    },
+    {
+        "price": 138.31,
+        "currency": "USD",
+        "date": "Jan 02 2025, 04:00 PM UTC-05:00",
+        "volume": 198247166
+    },
+    {
+        "price": 144.47,
+        "currency": "USD",
+        "date": "Jan 03 2025, 04:00 PM UTC-05:00",
+        "volume": 229322478
+    },
+    {
+        "price": 149.43,
+        "currency": "USD",
+        "date": "Jan 06 2025, 04:00 PM UTC-05:00",
+        "volume": 265377359
+    },
+    {
+        "price": 140.14,
+        "currency": "USD",
+        "date": "Jan 07 2025, 04:00 PM UTC-05:00",
+        "volume": 351782174
+    },
+    {
+        "price": 140.11,
+        "currency": "USD",
+        "date": "Jan 08 2025, 04:00 PM UTC-05:00",
+        "volume": 227349948
+    },
+    {
+        "price": 135.91,
+        "currency": "USD",
+        "date": "Jan 10 2025, 04:00 PM UTC-05:00",
+        "volume": 207602514
+    },
+    {
+        "price": 133.23,
+        "currency": "USD",
+        "date": "Jan 13 2025, 04:00 PM UTC-05:00",
+        "volume": 204808914
+    },
+    {
+        "price": 131.76,
+        "currency": "USD",
+        "date": "Jan 14 2025, 04:00 PM UTC-05:00",
+        "volume": 195590485
+    },
+    {
+        "price": 136.24,
+        "currency": "USD",
+        "date": "Jan 15 2025, 04:00 PM UTC-05:00",
+        "volume": 185217338
+    },
+    {
+        "price": 133.57,
+        "currency": "USD",
+        "date": "Jan 16 2025, 04:00 PM UTC-05:00",
+        "volume": 209235583
+    },
+    {
+        "price": 137.71,
+        "currency": "USD",
+        "date": "Jan 17 2025, 04:00 PM UTC-05:00",
+        "volume": 201188760
+    },
+    {
+        "price": 140.83,
+        "currency": "USD",
+        "date": "Jan 21 2025, 04:00 PM UTC-05:00",
+        "volume": 197748985
+    },
+    {
+        "price": 147.07,
+        "currency": "USD",
+        "date": "Jan 22 2025, 04:00 PM UTC-05:00",
+        "volume": 237651395
+    },
+    {
+        "price": 145.59,
+        "currency": "USD",
+        "date": "Jan 23 2025, 12:18 PM UTC-05:00"
+    }
+]
